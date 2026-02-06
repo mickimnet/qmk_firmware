@@ -1,12 +1,14 @@
-# Hiexa V80 (without wireless support)
+# Hiexa V80 (wired only)
 
 ![Hiexa V80 PCB (front)](https://i.imgur.com/cPmihKc.jpeg)
 ![Hiexa V80 PCB (back)](https://i.imgur.com/BD8wm9Z.jpeg)
 
 A modern TKL / 80% multi-layout keyboard with 100% fully CNC finish, customized ball catch structure, magnetic connector assembly process and a dot-matrix circular LED light above the arrow keys. It supports PCB gasket, plate gasket, and top mount.
 
+The MCU (WB32FQ95) is wireless-capable, but QMK does not yet support wireless for this chip. This firmware is wired-only via USB.
+
 * Keyboard Maintainer: [Mick Hohmann](https://github.com/mickimnet)
-* Hardware Supported: Westberry WB32FQ95
+* Hardware Supported: Westberry WB32FQ95 (Cortex-M3, 72 MHz), Zetta 25D40 SPI flash, SNLED27351 LED drivers (x2)
 * Hardware Availability: [MonacoKeys](https://monacokeys.de/) (limited in stock)
 
 Make example for this keyboard (after setting up your build environment):
@@ -17,7 +19,7 @@ Flashing example for this keyboard:
 
     make hiexa/v80:default:flash
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+See the [build environment setup](https://docs.qmk.fm/newbs_getting_started) and the [make instructions](https://docs.qmk.fm/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/newbs).
 
 ## Bootloader
 

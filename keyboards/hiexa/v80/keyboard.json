@@ -6,7 +6,8 @@
     "usb": {
         "device_version": "1.0.0",
         "vid": "0x4858",
-        "pid": "0x5680"
+        "pid": "0x5680",
+        "suspend_wakeup_delay": 400
     },
     "processor": "WB32FQ95",
     "bootloader": "wb32-dfu",
